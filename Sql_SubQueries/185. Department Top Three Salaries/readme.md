@@ -1,6 +1,5 @@
-# 🏆 LeetCode 185 — Department Top Three Salaries
+#  LeetCode 185 — Department Top Three Salaries
 
-This README explains **two correct and interview-approved approaches** to solve **Department Top Three Salaries**:
 
 1. Correlated Subquery (classic SQL thinking)
 2. Window Function (modern & optimal)
@@ -147,9 +146,9 @@ WHERE rnk <= 3;
 
 | Function | Issue |
 |--------|------|
-| ROW_NUMBER | Breaks ties ❌ |
-| RANK | Skips ranks ❌ |
-| DENSE_RANK | Correct for distinct salaries ✅ |
+| ROW_NUMBER | Breaks ties (no) |
+| RANK | Skips ranks (no) |
+| DENSE_RANK | Correct for distinct salaries (YES) |
 
 ---
 
@@ -177,7 +176,7 @@ Mentioning **both approaches** is a big plus in interviews.
 
 - Correlated subqueries think **row by row**
 - Window functions think **rank by partition**
-- Both are correct — mastery means knowing **when and why**
+
 
 ---
 
