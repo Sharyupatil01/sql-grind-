@@ -152,25 +152,7 @@ WHERE rnk <= 3;
 
 ---
 
-##  Correlated Subquery vs Window Function
 
-| Aspect | Correlated Subquery | Window Function |
-|------|---------------------|-----------------|
-| SQL Style | Classic | Modern |
-| Performance | Slower | Faster |
-| Readability | Logical | Clean |
-| Interview Impact | Good | Very Strong |
-
----
-
-## Interview Tip
-
-> If window functions are allowed, prefer `DENSE_RANK`.
-> Otherwise, correlated subqueries demonstrate strong fundamentals.
-
-Mentioning **both approaches** is a big plus in interviews.
-
----
 
 ##  Key Takeaway
 
