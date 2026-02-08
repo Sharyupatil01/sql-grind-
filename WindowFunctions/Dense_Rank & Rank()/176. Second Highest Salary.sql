@@ -70,3 +70,16 @@ FROM (
     ) x  
 ) t
 WHERE rn = 2;
+
+-- using dense_rank() to handle ties
+SELECT 
+     max(salary) as SecondHighestSalary
+FROM (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+
+    FROM (
+        SELECT DISTINCT salary
+        FROM Employee
+    ) x  
+) t
+WHERE rnk = 2;
